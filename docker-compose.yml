@@ -40,6 +40,7 @@ services:
     ports:
       - "3002:3002"
     environment:
+      - PORT=3002
       - REDIS_URL=redis://redis:6379
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/leetcode?schema=public
     depends_on:
